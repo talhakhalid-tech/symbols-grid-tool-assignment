@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-import ICONS from '@symbo.ls/default-icons'
+import ICONS from '@symbo.ls/default-icons';
 
 /**
  * Colors
@@ -11,13 +11,13 @@ const COLOR = {
   black: 'black',
   white: 'white',
   orange: '#E98232'
-}
+};
 
 /**
  * Gradients
  * @tutorial https://docs.symbols.app/color
  */
-const GRADIENT = {}
+const GRADIENT = {};
 
 /**
  * Themes
@@ -38,19 +38,30 @@ const THEME = {
       color: 'white'
     }
   }
-}
+};
 
 /**
  * Fonts
  * @tutorial https://docs.symbols.app/font
  */
-const FONT = {}
+const FONT = {
+  Europa: [
+    {
+      url: './fonts/europa-bold-webfont.woff2',
+      fontWeight: 600
+    },
+    {
+      url: './fonts/europa-regular-webfont.woff2',
+      fontWeight: 300
+    }
+  ]
+};
 
 /**
  * Font families
  * @tutorial https://docs.symbols.app/font
  */
-const FONT_FAMILY = {}
+const FONT_FAMILY = {};
 
 /**
  * Typography
@@ -60,14 +71,14 @@ const FONT_FAMILY = {}
 const TYPOGRAPHY = {
   base: 16,
   ratio: 1.2
-}
+};
 
 /**
  * Spacing
  * @tutorial https://docs.symbols.app/spacing
  * @tutorial https://docs.symbols.app/sequence
  */
-const SPACING = {}
+const SPACING = {};
 
 const options = {
   verbose: false,
@@ -77,7 +88,7 @@ const options = {
   useVariable: true,
   useSvgSprite: true,
   useIconSprite: true
-}
+};
 
 export default {
   ...options,
@@ -89,4 +100,4 @@ export default {
   SPACING,
   FONT,
   FONT_FAMILY
-}
+};

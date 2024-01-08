@@ -10,14 +10,15 @@ import config from '../config';
 create(
   {
     props: {
-      theme: 'document',
+      theme: 'document @light',
       flow: 'column',
       height: '100vh',
-      align: 'center space-between'
+      align: 'center space-between',
+      fontFamily: 'Europa'
     },
     state: {
-      totalX: parseInt(config.x),
-      totalY: parseInt(config.y),
+      totalX: parseInt(config?.x),
+      totalY: parseInt(config?.y),
       selectedX: 0,
       selectedY: 0
     },

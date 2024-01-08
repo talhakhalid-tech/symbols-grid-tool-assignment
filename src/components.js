@@ -62,7 +62,7 @@ export const GridItem = {
     height: '26px',
     cursor: 'pointer',
     borderRadius: '2px',
-    background: 'pink'
+    background: '#E8F1FF'
   },
   on: {
     click: (ev, element) => {
@@ -71,12 +71,12 @@ export const GridItem = {
       const currentX = element.props.currentX;
       const currentY = element.props.currentY;
       for (let i = 0; i < x * y; i++) {
-        let background = 'pink';
+        let background = '#E8F1FF';
         if (
           element.parent[i].props.currentX <= currentX &&
           element.parent[i].props.currentY <= currentY
         ) {
-          background = 'red';
+          background = '#3D7BD9';
         }
         element.parent[i].update({ style: { background } });
       }
