@@ -16,8 +16,8 @@ create(
       align: 'center space-between'
     },
     state: {
-      totalX: config.x ? parseInt(config.x) : 16,
-      totalY: config.y ? parseInt(config.y) : 8,
+      totalX: parseInt(config.x),
+      totalY: parseInt(config.y),
       selectedX: 0,
       selectedY: 0
     },
