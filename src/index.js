@@ -7,9 +7,6 @@ import { CustomFooter, GridSelection } from './components';
 
 import config from '../config';
 
-console.log(`X value: ${config.x}`);
-console.log(`Y value: ${config.y}`);
-
 create(
   {
     props: {
@@ -18,7 +15,12 @@ create(
       height: '100vh',
       align: 'center space-between'
     },
-    state: { totalX: 16, totalY: 8, selectedX: 0, selectedY: 0 },
+    state: {
+      totalX: config.x ? parseInt(config.x) : 16,
+      totalY: config.y ? parseInt(config.y) : 8,
+      selectedX: 0,
+      selectedY: 0
+    },
     content: {
       GridSelection
     },
