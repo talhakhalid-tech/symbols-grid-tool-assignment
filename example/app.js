@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-import { Flex } from 'smbls'
+import { Flex } from 'smbls';
 
 export const App = {
   extend: Flex,
@@ -17,4 +17,4 @@ export const App = {
   content: {},
 
   Footer: { text: 'Footer' }
-}
+};

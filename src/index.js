@@ -1,28 +1,28 @@
-'use strict'
+'use strict';
 
-import { create, Flex } from 'smbls'
+import { create, Flex } from 'smbls';
 
-import designSystem from './designSystem'
-import * as components from './components'
-import pages from './pages'
+import designSystem from './designSystem';
+import { CustomFooter, GridSelection } from './components';
 
-create({
-  extend: Flex,
+create(
+  {
+    props: {
+      theme: 'document',
+      flow: 'column',
+      height: '100vh',
+      align: 'center space-between'
+    },
+    state: { totalX: 16, totalY: 8, selectedX: 0, selectedY: 0 },
+    content: {
+      GridSelection
+    },
 
-  props: {
-    theme: 'document',
-    flow: 'column',
-    height: '100vh',
-    align: 'center space-between'
+    Header: {},
+
+    Footer: CustomFooter
   },
-
-  Header: {},
-
-  content: {},
-
-  Footer: { text: 'Footer' }
-}, {
-  designSystem,
-  components,
-  pages
-})
+  {
+    designSystem
+  }
+);
