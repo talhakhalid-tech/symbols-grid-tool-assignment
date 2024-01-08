@@ -5,6 +5,11 @@ import { create, Flex } from 'smbls';
 import designSystem from './designSystem';
 import { CustomFooter, GridSelection } from './components';
 
+import config from '../config';
+
+console.log(`X value: ${config.x}`);
+console.log(`Y value: ${config.y}`);
+
 create(
   {
     props: {
